@@ -33,6 +33,7 @@ sudo pacman -S --noconfirm \
   fcitx5-gtk \
   fcitx5-chinese-addons \
   ufw \
+  brightnessctl \
   keepassxc && \
 
 # DWM git clone
