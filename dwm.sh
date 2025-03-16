@@ -9,7 +9,6 @@ sudo pacman -S --noconfirm \
   feh \
   scrot \
   flameshot \
-  slock \
   base-devel \
   git \
   libx11 \
@@ -49,6 +48,8 @@ cd ~/.suckless/st && sudo make clean install && \
 cd ~/.suckless/dmenu && sudo make clean install && \
 
 cd ~/.suckless/dwmblocks && sudo make clean install && \
+
+cd ~/.suckless/slock && sudo make clean install && \
 
 # .xinitrc
 echo "
