@@ -5,7 +5,7 @@ sudo pacman -S --noconfirm \
   vim \
   wget \
   curl \
-  htop \
+  btop \
   feh \
   scrot \
   flameshot \
@@ -34,6 +34,8 @@ sudo pacman -S --noconfirm \
   fcitx5-chinese-addons \
   ufw \
   brightnessctl \
+  pavucontrol \
+  arandr \
   keepassxc && \
 
 # DWM git clone
