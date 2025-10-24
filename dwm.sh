@@ -2,7 +2,6 @@
 
 # Install basic utilities
 sudo pacman -S --noconfirm \
-  neofetch \
   vim \
   curl \
   htop \
@@ -14,9 +13,9 @@ sudo pacman -S --noconfirm \
   libx11 \
   libxft \
   xorg-server \
-  xorg-input \
+  xorg-xinput \
   xcompmgr \
-  xautolock \
+  xlockmore \
   xorg-xrandr \
   pipewire \
   wireplumber \
