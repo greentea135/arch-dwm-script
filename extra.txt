@@ -5,9 +5,28 @@ XMODIFIERS=@im=fcitx
 SDL_IM_MODULE=fcitx
 
 # ~/.xinitrc
-xinput --set-prop 'TOUCHPAD_NAME' 'libinput Natural Scrolling Enabled' 1 &
-xrandr --output MAIN_DISPLAY --auto --output OUTPUT_DISPLAY --auto --right-of MAIN_DISPLAY &
-xrandr --output MAIN_DISPLAY --auto --output OUTPUT_DISPLAY --auto --left-of MAIN_DISPLAY &
+dwmblocks &
+
+~/.fehbg &
+
+xcompmgr &
+
+xset s 3600 &
+
+xset dpms 3600 4200 4800 &
+
+xautolock -time 5 -locker slock -corners 0-00 &
+
+fcitx5 &
+
+# file picker
+export DISPLAY=:0
+export XDG_CURRENT_DESKTOP=DWM
+dbus-update-activation-environment --systemd DISPLAY XAUTHORITY XDG_CURRENT_DESKTOP
+systemctl --user start xdg-desktop-portal-gtk.service
+systemctl --user start xdg-desktop-portal.service
+
+exec dwm
 
 
 # /etc/X11/xorg.conf.d/30-touchpad.conf
