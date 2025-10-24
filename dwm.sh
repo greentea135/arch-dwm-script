@@ -14,6 +14,7 @@ sudo pacman -S --noconfirm \
   libxft \
   xorg-server \
   xorg-xinput \
+  xorg-xinit \
   xcompmgr \
   xlockmore \
   xorg-xrandr \
