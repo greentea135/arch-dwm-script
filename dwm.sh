@@ -3,6 +3,7 @@
 # Install basic utilities
 sudo pacman -S --noconfirm \
   vim \
+  wget \
   curl \
   htop \
   feh \
